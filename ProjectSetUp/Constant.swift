@@ -7,7 +7,7 @@
 
 import Foundation
 import UIKit
-
+//All Data Found
 let screenWidth = UIScreen.main.bounds.width
 let screenHeight = UIScreen.main.bounds.height
 
