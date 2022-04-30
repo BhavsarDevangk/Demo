@@ -6,7 +6,16 @@
 //
 
 import Foundation
+import MBProgressHUD
 
-
+class MBProgressHub: NSObject {
+   static var objShared = MBProgressHUD()
+    func setupProgressHUB() {
+        
+    }
+    func removeProgressHUB() {
+        
+    }
+ }
 
 
