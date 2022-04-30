@@ -7,7 +7,7 @@
 
 import Foundation
 import UIKit
-//All Data Found check new value
+//All Data Found check new value in new database
 let screenWidth = UIScreen.main.bounds.width
 let screenHeight = UIScreen.main.bounds.height
 
