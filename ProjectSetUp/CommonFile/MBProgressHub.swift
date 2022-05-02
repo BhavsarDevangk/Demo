@@ -8,13 +8,15 @@
 import Foundation
 import MBProgressHUD
 
-class MBProgressHub: NSObject {
-   static var objShared = MBProgressHUD()
-    func setupProgressHUB() {
-        
+class MBProgressHubDisplay: NSObject {
+   static var objShared = MBProgressHubDisplay()
+    func setupProgressHUB(view:UIView) {
+        let loadingNotification = MBProgressHUD.showAdded(to: view, animated: true)
+        loadingNotification.mode = MBProgressHUDMode.indeterminate
+        loadingNotification.label.text = "Loading"
     }
-    func removeProgressHUB() {
-        
+    func dismissProgressHUB(view:UIView) {
+        MBProgressHUD.hide(for: view, animated: true)
     }
  }
 

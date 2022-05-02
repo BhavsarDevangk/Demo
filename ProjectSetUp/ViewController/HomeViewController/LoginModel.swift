@@ -24,3 +24,21 @@ struct LoginUserList : Decodable {
         case profileImage = "profileImage"
     }
 }
+
+enum LoginTitle {
+    case login,email,passsword,submit,preferLangauge
+    func selecetdTitle() -> String {
+        switch self {
+        case .login:
+            return "Login".localized()
+        case .email:
+            return "Email".localized()
+        case .passsword:
+            return "Password".localized()
+        case .submit:
+            return "Submit".localized()
+        case .preferLangauge:
+            return "Prefer Langauge".localized()
+        }
+    }
+}

@@ -9,18 +9,17 @@ import Foundation
 import UIKit
 let screenWidth = UIScreen.main.bounds.width
 let screenHeight = UIScreen.main.bounds.height
-
 let MainStoryoard = "Main"
-
-
 let kProjectName = "Project Name"
-
-
 let APIURl = "https://retoolapi.dev"
 let getAllUser = "/1lMpyy/data"
+let kLCLCurrentLanguageKey  = "LCLCurrentLanguageKey"
+let kLCLLanguageChangeNotification = "LCLLanguageChangeNotification"
+let kLeftClicked = "LeftClicked"
+let kRightClicked = "RightClicked"
 
+typealias buttonClickedEvent = (String) -> Void
 struct Alert {
-    
     func setUpCustomAlertWithActionButton(message:String,isCancel:Bool,cancel cancelAction: @escaping((Bool) -> Void), ok okAction: @escaping((Bool) -> Void),viewController:UIViewController) {
         
         let alert = UIAlertController(title: kProjectName, message: message, preferredStyle: .alert)

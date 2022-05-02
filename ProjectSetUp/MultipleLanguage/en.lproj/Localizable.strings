@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  ProjectSetUp
+
+  Created by PSSPL on 02/05/22.
+  
+*/
+
+"Login" = "Login";
+"Email" = "Email";
+"Password" = "Password";
+"Submit" = "Submit";
+"Prefer Langauge" = "Prefer Langauge";

@@ -11,21 +11,35 @@ class ListViewModel: NSObject {
     var viewController:UIViewController?
     var allData = [LoginUserList]()
     
+    func setUpHeaderView(viewHeader:HeaderView) {
+        viewHeader.btnClickedEvent = {[weak self] result in
+            if result == kLeftClicked {
+                self?.dismissViewController()
+            } else {
+                
+            }
+        }
+        viewHeader.isRightAvailable = false
+//        viewHeader.leftImage = UIImage(named: "")
+        viewHeader.lblTitle.text = "List"
+
+    }
+    
+    func dismissViewController() {
+        viewController?.dismiss(animated: true)
+    }
+}
+
+extension ListViewModel:CustomTableView {
+    func numberofRows() -> Int {
+        return allData.count
+    }
+    
+    func itemAtIndex<T>(index: Int) -> T {
+        let data = allData[index]
+        return data as! T
+    }
 }
 
 
-extension ListUserViewController : UITableViewDelegate,UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return objListViewModel.allData.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tblDisplayData.dequeueReusableCell(withIdentifier: "ListTableViewCell") as! ListTableViewCell
-        let data = objListViewModel.allData[indexPath.row]
-        cell.lblTitle.text = data.name
-        return cell
-    }
-    
-    
-}
 

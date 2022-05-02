@@ -25,6 +25,13 @@
 		328A73DD281C05DE007E83FC /* ListUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328A73DC281C05DE007E83FC /* ListUserViewController.swift */; };
 		328A73DF281C0AFF007E83FC /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328A73DE281C0AFF007E83FC /* ListViewModel.swift */; };
 		328A73E1281C0CD3007E83FC /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328A73E0281C0CD3007E83FC /* ListTableViewCell.swift */; };
+		32D47B78281F9F5D008A63A6 /* CustomTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D47B77281F9F5D008A63A6 /* CustomTableView.swift */; };
+		32D47B7B281FA434008A63A6 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32D47B7A281FA434008A63A6 /* HeaderView.xib */; };
+		32D47B7D281FA72B008A63A6 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D47B7C281FA72B008A63A6 /* HeaderView.swift */; };
+		32D47B81281FD08F008A63A6 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 32D47B80281FD08F008A63A6 /* IQKeyboardManagerSwift */; };
+		32D47B87281FD4AF008A63A6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 32D47B89281FD4AF008A63A6 /* Localizable.strings */; };
+		32D47B8D281FD8D9008A63A6 /* LangaugePreferencesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D47B8C281FD8D9008A63A6 /* LangaugePreferencesViewModel.swift */; };
+		32D47B90281FDBE1008A63A6 /* Localize_Swift in Frameworks */ = {isa = PBXBuildFile; productRef = 32D47B8F281FDBE1008A63A6 /* Localize_Swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +53,13 @@
 		328A73DC281C05DE007E83FC /* ListUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListUserViewController.swift; sourceTree = "<group>"; };
 		328A73DE281C0AFF007E83FC /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 		328A73E0281C0CD3007E83FC /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
+		32D47B77281F9F5D008A63A6 /* CustomTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableView.swift; sourceTree = "<group>"; };
+		32D47B7A281FA434008A63A6 /* HeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
+		32D47B7C281FA72B008A63A6 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		32D47B88281FD4AF008A63A6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		32D47B8A281FD4B2008A63A6 /* gu-IN */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "gu-IN"; path = "gu-IN.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		32D47B8B281FD4B3008A63A6 /* hi-IN */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "hi-IN"; path = "hi-IN.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		32D47B8C281FD8D9008A63A6 /* LangaugePreferencesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LangaugePreferencesViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +68,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				328A73D8281C02C7007E83FC /* MBProgressHUD in Frameworks */,
+				32D47B90281FDBE1008A63A6 /* Localize_Swift in Frameworks */,
 				328A73D2281BDE21007E83FC /* Alamofire in Frameworks */,
+				32D47B81281FD08F008A63A6 /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,8 +99,9 @@
 				32268EF0281BA48A0096628A /* AppDelegate.swift */,
 				32268EF2281BA48A0096628A /* SceneDelegate.swift */,
 				32268F05281BA5450096628A /* Constant.swift */,
+				32D47B82281FD3B7008A63A6 /* MultipleLanguage */,
 				32268F09281BB0520096628A /* CommonFile */,
-				328A73D3281BDFE8007E83FC /* ServerSetUp */,
+				328A73D3281BDFE8007E83FC /* WebServices */,
 				32268F07281BA54C0096628A /* ViewController */,
 				32268EF6281BA48A0096628A /* Main.storyboard */,
 				32268EF9281BA48B0096628A /* Assets.xcassets */,
@@ -97,6 +114,7 @@
 		32268F07281BA54C0096628A /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				32D47B91281FE3F5008A63A6 /* Language */,
 				328A73DB281C05B6007E83FC /* ListData */,
 				32268F08281BA56B0096628A /* HomeViewController */,
 			);
@@ -116,9 +134,11 @@
 		32268F09281BB0520096628A /* CommonFile */ = {
 			isa = PBXGroup;
 			children = (
+				32D47B79281FA3CA008A63A6 /* HeaderView */,
 				32268F0D281BB0B60096628A /* CommanFile.swift */,
 				328A73D9281C0308007E83FC /* MBProgressHub.swift */,
 				32268F0A281BB0620096628A /* Extension */,
+				32D47B77281F9F5D008A63A6 /* CustomTableView.swift */,
 			);
 			path = CommonFile;
 			sourceTree = "<group>";
@@ -131,12 +151,12 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
-		328A73D3281BDFE8007E83FC /* ServerSetUp */ = {
+		328A73D3281BDFE8007E83FC /* WebServices */ = {
 			isa = PBXGroup;
 			children = (
 				328A73D4281BE045007E83FC /* APIRequest.swift */,
 			);
-			path = ServerSetUp;
+			path = WebServices;
 			sourceTree = "<group>";
 		};
 		328A73DB281C05B6007E83FC /* ListData */ = {
@@ -147,6 +167,31 @@
 				328A73DC281C05DE007E83FC /* ListUserViewController.swift */,
 			);
 			path = ListData;
+			sourceTree = "<group>";
+		};
+		32D47B79281FA3CA008A63A6 /* HeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				32D47B7A281FA434008A63A6 /* HeaderView.xib */,
+				32D47B7C281FA72B008A63A6 /* HeaderView.swift */,
+			);
+			path = HeaderView;
+			sourceTree = "<group>";
+		};
+		32D47B82281FD3B7008A63A6 /* MultipleLanguage */ = {
+			isa = PBXGroup;
+			children = (
+				32D47B89281FD4AF008A63A6 /* Localizable.strings */,
+			);
+			path = MultipleLanguage;
+			sourceTree = "<group>";
+		};
+		32D47B91281FE3F5008A63A6 /* Language */ = {
+			isa = PBXGroup;
+			children = (
+				32D47B8C281FD8D9008A63A6 /* LangaugePreferencesViewModel.swift */,
+			);
+			path = Language;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +213,8 @@
 			packageProductDependencies = (
 				328A73D1281BDE21007E83FC /* Alamofire */,
 				328A73D7281C02C7007E83FC /* MBProgressHUD */,
+				32D47B80281FD08F008A63A6 /* IQKeyboardManagerSwift */,
+				32D47B8F281FDBE1008A63A6 /* Localize_Swift */,
 			);
 			productName = ProjectSetUp;
 			productReference = 32268EED281BA48A0096628A /* ProjectSetUp.app */;
@@ -195,11 +242,16 @@
 			knownRegions = (
 				en,
 				Base,
+				"gu-IN",
+				"hi-IN",
 			);
 			mainGroup = 32268EE4281BA48A0096628A;
 			packageReferences = (
 				328A73D0281BDE21007E83FC /* XCRemoteSwiftPackageReference "Alamofire" */,
 				328A73D6281C02C7007E83FC /* XCRemoteSwiftPackageReference "MBProgressHUD" */,
+				32D47B7E281FCF5A008A63A6 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				32D47B7F281FD08F008A63A6 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				32D47B8E281FDBE1008A63A6 /* XCRemoteSwiftPackageReference "Localize-Swift" */,
 			);
 			productRefGroup = 32268EEE281BA48A0096628A /* Products */;
 			projectDirPath = "";
@@ -215,9 +267,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32D47B87281FD4AF008A63A6 /* Localizable.strings in Resources */,
 				32268EFD281BA48B0096628A /* LaunchScreen.storyboard in Resources */,
 				32268EFA281BA48B0096628A /* Assets.xcassets in Resources */,
 				32268EF8281BA48A0096628A /* Main.storyboard in Resources */,
+				32D47B7B281FA434008A63A6 /* HeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,14 +287,17 @@
 				328A73DF281C0AFF007E83FC /* ListViewModel.swift in Sources */,
 				32268EF1281BA48A0096628A /* AppDelegate.swift in Sources */,
 				32268F0E281BB0B60096628A /* CommanFile.swift in Sources */,
+				32D47B78281F9F5D008A63A6 /* CustomTableView.swift in Sources */,
 				32268EF3281BA48A0096628A /* SceneDelegate.swift in Sources */,
 				328A73CF281BC4FD007E83FC /* LoginModel.swift in Sources */,
 				32268F06281BA5450096628A /* Constant.swift in Sources */,
 				328A73DD281C05DE007E83FC /* ListUserViewController.swift in Sources */,
+				32D47B8D281FD8D9008A63A6 /* LangaugePreferencesViewModel.swift in Sources */,
 				328A73DA281C0308007E83FC /* MBProgressHub.swift in Sources */,
 				328A73D5281BE045007E83FC /* APIRequest.swift in Sources */,
 				328A73E1281C0CD3007E83FC /* ListTableViewCell.swift in Sources */,
 				328A73CD281BC4EA007E83FC /* LoginViewModel.swift in Sources */,
+				32D47B7D281FA72B008A63A6 /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +320,16 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		32D47B89281FD4AF008A63A6 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32D47B88281FD4AF008A63A6 /* en */,
+				32D47B8A281FD4B2008A63A6 /* gu-IN */,
+				32D47B8B281FD4B3008A63A6 /* hi-IN */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -270,6 +337,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -330,6 +398,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -393,6 +462,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -421,6 +491,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -476,6 +547,30 @@
 				minimumVersion = 1.0.0;
 			};
 		};
+		32D47B7E281FCF5A008A63A6 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		32D47B7F281FD08F008A63A6 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		32D47B8E281FDBE1008A63A6 /* XCRemoteSwiftPackageReference "Localize-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/marmelroy/Localize-Swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -488,6 +583,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 328A73D6281C02C7007E83FC /* XCRemoteSwiftPackageReference "MBProgressHUD" */;
 			productName = MBProgressHUD;
+		};
+		32D47B80281FD08F008A63A6 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 32D47B7F281FD08F008A63A6 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+		32D47B8F281FDBE1008A63A6 /* Localize_Swift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 32D47B8E281FDBE1008A63A6 /* XCRemoteSwiftPackageReference "Localize-Swift" */;
+			productName = Localize_Swift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
