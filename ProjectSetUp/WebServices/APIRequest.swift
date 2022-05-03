@@ -10,7 +10,6 @@ import Alamofire
 
 class APIRequestCall: NSObject {
     
-    
     func checkInterNetConnection() -> Bool {
         return NetworkReachabilityManager()?.isReachable ?? false
     }

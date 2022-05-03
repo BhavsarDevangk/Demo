@@ -52,7 +52,9 @@ extension ListUserViewController : UITableViewDelegate,UITableViewDataSource {
         } else {
             return objListViewModel.numberofRows()
         }
-        
+    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return objListViewModel.heightForRow()
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tblDisplayData.dequeueReusableCell(withIdentifier: "ListTableViewCell") as! ListTableViewCell

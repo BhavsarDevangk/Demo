@@ -31,10 +31,13 @@ class ListViewModel: NSObject {
 }
 
 extension ListViewModel:CustomTableView {
+
     func numberofRows() -> Int {
         return allData.count
     }
-    
+    func heightForRow() -> CGFloat {
+        return screenWidth * 0.075
+    }
     func itemAtIndex<T>(index: Int) -> T {
         let data = allData[index]
         return data as! T

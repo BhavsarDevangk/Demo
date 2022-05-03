@@ -10,6 +10,15 @@
       }
     },
     {
+      "identity" : "facebook-ios-sdk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/facebook/facebook-ios-sdk",
+      "state" : {
+        "branch" : "main",
+        "revision" : "736c4fe8df03c0d2d8113b3cc3e26b2a4f1955a1"
+      }
+    },
+    {
       "identity" : "iqkeyboardmanager",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/hackiftekhar/IQKeyboardManager.git",

@@ -38,10 +38,13 @@ class LangaugePreferencesViewModel: NSObject {
     
 }
 extension LangaugePreferencesViewModel:CustomTableView {
+   
     func numberofRows() -> Int {
         return arrAllLangaues.count
     }
-    
+    func heightForRow() -> CGFloat {
+        return screenWidth * 0.075
+    }
     func itemAtIndex<T>(index: Int) -> T {
         let data = arrAllLangaues[index]
         return data as! T

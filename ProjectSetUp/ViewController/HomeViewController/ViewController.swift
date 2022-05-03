@@ -6,10 +6,11 @@
 //
 
 import UIKit
-import SwiftUI
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var forgotPassword: UIButton!
+    @IBOutlet weak var signUp: UIButton!
     @IBOutlet weak var navigationData: UINavigationItem!
     @IBOutlet weak var btnSubmit: UIButton!
     @IBOutlet weak var txtEmailId: UITextField!
@@ -53,5 +54,18 @@ class ViewController: UIViewController {
             self.present(objData, animated: true, completion: nil)
             
         }
+    }
+    
+    @IBAction func signUpClicked(_ sender: Any) {
+        let objSignUpViewController:SignUpViewController = UIStoryboard(name: MainStoryoard, bundle: nil).instantiateViewController(withIdentifier: "SignUpViewController") as! SignUpViewController
+        objSignUpViewController.modalPresentationStyle = .overFullScreen
+        self.present(objSignUpViewController, animated: true, completion: nil)
+        
+    }
+    
+    @IBAction func forgotPasswordClicked(_ sender: Any) {
+        let objSocialViewController:SocialViewController = UIStoryboard(name: MainStoryoard, bundle: nil).instantiateViewController(withIdentifier: "SocialViewController") as! SocialViewController
+        objSocialViewController.modalPresentationStyle = .overFullScreen
+        self.present(objSocialViewController, animated: true, completion: nil)
     }
 }

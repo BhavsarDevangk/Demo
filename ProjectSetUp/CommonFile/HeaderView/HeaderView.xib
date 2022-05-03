@@ -32,29 +32,29 @@
                     </variation>
                 </label>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrowshape.turn.up.backward.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="uUP-vV-Egf">
-                    <rect key="frame" x="20" y="35" width="41.5" height="38.5"/>
+                    <rect key="frame" x="20" y="40.5" width="30" height="27.5"/>
                     <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="uUP-vV-Egf" secondAttribute="height" multiplier="1:1" id="M0J-5G-Q43"/>
                     </constraints>
                 </imageView>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="co1-Vv-f0V">
-                    <rect key="frame" x="352.5" y="34" width="41.5" height="41"/>
+                    <rect key="frame" x="364" y="39.5" width="30" height="30"/>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mBL-5a-SPg">
-                    <rect key="frame" x="10" y="24" width="61.5" height="61"/>
-                    <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain"/>
-                    <connections>
-                        <action selector="btnLeftClicked:" destination="-1" eventType="touchUpInside" id="mOd-yF-Toe"/>
-                    </connections>
-                </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vJj-be-SnS">
-                    <rect key="frame" x="342.5" y="24" width="61.5" height="61"/>
+                    <rect key="frame" x="354" y="29.5" width="50" height="50"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain"/>
                     <connections>
                         <action selector="btnRightClicked:" destination="-1" eventType="touchUpInside" id="Lob-06-E63"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mBL-5a-SPg">
+                    <rect key="frame" x="10" y="29.5" width="50" height="50"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain"/>
+                    <connections>
+                        <action selector="btnLeftClicked:" destination="-1" eventType="touchUpInside" id="mOd-yF-Toe"/>
                     </connections>
                 </button>
             </subviews>
@@ -70,7 +70,7 @@
                 <constraint firstItem="mBL-5a-SPg" firstAttribute="bottom" secondItem="uUP-vV-Egf" secondAttribute="bottom" constant="10" id="HAU-5n-eaN"/>
                 <constraint firstItem="4gf-3a-AYn" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Ibx-jR-ojx"/>
                 <constraint firstItem="mBL-5a-SPg" firstAttribute="trailing" secondItem="uUP-vV-Egf" secondAttribute="trailing" constant="10" id="OzH-SM-fpy"/>
-                <constraint firstItem="uUP-vV-Egf" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.1" id="Qq5-Ar-Y1A"/>
+                <constraint firstItem="uUP-vV-Egf" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.072" id="Qq5-Ar-Y1A"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="co1-Vv-f0V" secondAttribute="trailing" constant="20" id="YVk-op-dQl"/>
                 <constraint firstItem="mBL-5a-SPg" firstAttribute="leading" secondItem="uUP-vV-Egf" secondAttribute="leading" constant="-10" id="aAq-mL-DoF"/>
                 <constraint firstItem="uUP-vV-Egf" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="ebu-nW-2jE"/>

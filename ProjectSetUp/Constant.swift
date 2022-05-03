@@ -18,7 +18,12 @@ let kLCLLanguageChangeNotification = "LCLLanguageChangeNotification"
 let kLeftClicked = "LeftClicked"
 let kRightClicked = "RightClicked"
 
+// Set up Typealise for closure
 typealias buttonClickedEvent = (String) -> Void
+typealias selectedImage = (UIImage) -> Void
+typealias selectedDate = (Date) -> Void
+typealias selectedValue = (String,Int) -> Void
+typealias selectedEvent = (Bool,Int) -> Void
 struct Alert {
     func setUpCustomAlertWithActionButton(message:String,isCancel:Bool,cancel cancelAction: @escaping((Bool) -> Void), ok okAction: @escaping((Bool) -> Void),viewController:UIViewController) {
         
