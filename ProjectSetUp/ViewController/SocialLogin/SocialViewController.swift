@@ -18,6 +18,9 @@ class SocialViewController: UIViewController {
         objSocialViewModel.setUpHeaderView(viewHeader: viewHeader)
     }
     
+    @IBAction func btnBioMatrixLogin(_ sender: Any) {
+        objSocialViewModel.setupBioMatrixLogin()
+    }
     @IBAction func btnFacebookloginClicked(_ sender: Any) {
         objSocialViewModel.fetchUserProfile()
     }

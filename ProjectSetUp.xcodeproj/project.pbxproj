@@ -582,8 +582,9 @@
 				DEVELOPMENT_TEAM = 83D7RPYBY6;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ProjectSetUp/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = SampleProject;
+				INFOPLIST_KEY_CFBundleDisplayName = " ProjectSetUp";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Use camera for take a picture";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Use Face ID instead of a password to access your account.";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Save user profile";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Need Library access to upload Photos";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -597,7 +598,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Prakash.SampleProject;
+				PRODUCT_BUNDLE_IDENTIFIER = PrakashInfo.ProjectSetUp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -615,8 +616,9 @@
 				DEVELOPMENT_TEAM = 83D7RPYBY6;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ProjectSetUp/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = SampleProject;
+				INFOPLIST_KEY_CFBundleDisplayName = " ProjectSetUp";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Use camera for take a picture";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Use Face ID instead of a password to access your account.";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Save user profile";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Need Library access to upload Photos";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -630,7 +632,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Prakash.SampleProject;
+				PRODUCT_BUNDLE_IDENTIFIER = PrakashInfo.ProjectSetUp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
