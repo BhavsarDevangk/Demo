@@ -40,20 +40,22 @@ class ViewController: UIViewController {
         objLoginViewModel.selectionLaguage()
     }
     @IBAction func btnSubmitClicked(_ sender: Any) {
-        if let email = txtEmailId.text {
-            objLoginViewModel.strEmailId = email
-        }
-        if let password = txtPassword.text {
-            objLoginViewModel.strPassword = password
-        }
-       let isSuccess = objLoginViewModel.setUpValidation()
-        if isSuccess {
-            let objData:ListUserViewController = UIStoryboard(name: MainStoryoard, bundle: nil).instantiateViewController(withIdentifier: "ListUserViewController") as! ListUserViewController
-            objData.modalPresentationStyle = .overFullScreen
-            objData.objListViewModel.allData = objLoginViewModel.allData
-            self.present(objData, animated: true, completion: nil)
-            
-        }
+        // Define the menu
+        let objHomeViewController:HomeViewController = UIStoryboard(name: MainStoryoard, bundle: nil).instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
+//        if let email = txtEmailId.text {
+//            objLoginViewModel.strEmailId = email
+//        }
+//        if let password = txtPassword.text {
+//            objLoginViewModel.strPassword = password
+//        }
+//       let isSuccess = objLoginViewModel.setUpValidation()
+//        if isSuccess {
+//            let objData:ListUserViewController = UIStoryboard(name: MainStoryoard, bundle: nil).instantiateViewController(withIdentifier: "ListUserViewController") as! ListUserViewController
+//            objData.modalPresentationStyle = .overFullScreen
+//            objData.objListViewModel.allData = objLoginViewModel.allData
+//            self.present(objData, animated: true, completion: nil)
+//
+//        }
     }
     
     @IBAction func signUpClicked(_ sender: Any) {

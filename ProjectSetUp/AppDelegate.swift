@@ -10,12 +10,9 @@ import IQKeyboardManagerSwift
 import FacebookLogin
 import FacebookCore
 
-var window:UIWindow?
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
-
+    var window:UIWindow?
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         IQKeyboardManager.shared.enable = true
@@ -23,6 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //            application,
 //            didFinishLaunchingWithOptions: launchOptions
 //        )
+        self.setUpSideMenu()
         return true
     }
     
@@ -38,6 +36,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //                annotation: options[UIApplication.OpenURLOptionsKey.annotation]
 //            )
 //        }
+    
+    func setUpSideMenu() {
+        let revalViewController = UIStoryboard(name: MainStoryoard, bundle: nil).instantiateViewController(withIdentifier: "SWRevealViewController")
+        self.window?.rootViewController = revalViewController
+    }
     // MARK: UISceneSession Lifecycle
 
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3210E9F4282253D000690C14 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3210E9F3282253D000690C14 /* HomeViewController.swift */; };
+		3210E9F62822541A00690C14 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3210E9F52822541A00690C14 /* HomeViewModel.swift */; };
+		3210E9F82822542C00690C14 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3210E9F72822542C00690C14 /* HomeModel.swift */; };
+		3210E9FB282262A000690C14 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3210E9FA282262A000690C14 /* SideMenuViewController.swift */; };
 		32268EF1281BA48A0096628A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32268EF0281BA48A0096628A /* AppDelegate.swift */; };
 		32268EF3281BA48A0096628A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32268EF2281BA48A0096628A /* SceneDelegate.swift */; };
 		32268EF5281BA48A0096628A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32268EF4281BA48A0096628A /* ViewController.swift */; };
@@ -16,6 +20,9 @@
 		32268F06281BA5450096628A /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32268F05281BA5450096628A /* Constant.swift */; };
 		32268F0C281BB0740096628A /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32268F0B281BB0740096628A /* Extension.swift */; };
 		32268F0E281BB0B60096628A /* CommanFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32268F0D281BB0B60096628A /* CommanFile.swift */; };
+		322A25AF2822A02900D3260A /* SideMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322A25AE2822A02900D3260A /* SideMenuViewModel.swift */; };
+		322A25B12822A03C00D3260A /* SideMenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322A25B02822A03C00D3260A /* SideMenuModel.swift */; };
+		322A25B62822B02500D3260A /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 322A25B52822B02500D3260A /* SWRevealViewController.m */; };
 		3278235C2820E28400A19F6D /* ImagePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3278235B2820E28400A19F6D /* ImagePickerController.swift */; };
 		327823612820EC0F00A19F6D /* SBPickerSwiftSelector.xib in Resources */ = {isa = PBXBuildFile; fileRef = 327823602820EC0F00A19F6D /* SBPickerSwiftSelector.xib */; };
 		327823632820EC2E00A19F6D /* SBPickerSwiftSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327823622820EC2E00A19F6D /* SBPickerSwiftSelector.swift */; };
@@ -50,6 +57,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3210E9F3282253D000690C14 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		3210E9F52822541A00690C14 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		3210E9F72822542C00690C14 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		3210E9FA282262A000690C14 /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		32268EED281BA48A0096628A /* ProjectSetUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectSetUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32268EF0281BA48A0096628A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		32268EF2281BA48A0096628A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +72,11 @@
 		32268F05281BA5450096628A /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		32268F0B281BB0740096628A /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		32268F0D281BB0B60096628A /* CommanFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommanFile.swift; sourceTree = "<group>"; };
+		322A25AE2822A02900D3260A /* SideMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewModel.swift; sourceTree = "<group>"; };
+		322A25B02822A03C00D3260A /* SideMenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuModel.swift; sourceTree = "<group>"; };
+		322A25B32822B02400D3260A /* ProjectSetUp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ProjectSetUp-Bridging-Header.h"; sourceTree = "<group>"; };
+		322A25B42822B02500D3260A /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		322A25B52822B02500D3260A /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		3278235B2820E28400A19F6D /* ImagePickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerController.swift; sourceTree = "<group>"; };
 		327823602820EC0F00A19F6D /* SBPickerSwiftSelector.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SBPickerSwiftSelector.xib; sourceTree = "<group>"; };
 		327823622820EC2E00A19F6D /* SBPickerSwiftSelector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SBPickerSwiftSelector.swift; sourceTree = "<group>"; };
@@ -107,6 +123,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3210E9F22822536900690C14 /* HomeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3210E9F72822542C00690C14 /* HomeModel.swift */,
+				3210E9F52822541A00690C14 /* HomeViewModel.swift */,
+				3210E9F3282253D000690C14 /* HomeViewController.swift */,
+			);
+			path = HomeViewController;
+			sourceTree = "<group>";
+		};
+		3210E9F92822627B00690C14 /* SideMenuViewController */ = {
+			isa = PBXGroup;
+			children = (
+				322A25B02822A03C00D3260A /* SideMenuModel.swift */,
+				322A25AE2822A02900D3260A /* SideMenuViewModel.swift */,
+				3210E9FA282262A000690C14 /* SideMenuViewController.swift */,
+			);
+			path = SideMenuViewController;
+			sourceTree = "<group>";
+		};
 		32268EE4281BA48A0096628A = {
 			isa = PBXGroup;
 			children = (
@@ -144,8 +180,10 @@
 		32268F07281BA54C0096628A /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				3210E9F92822627B00690C14 /* SideMenuViewController */,
+				3210E9F22822536900690C14 /* HomeViewController */,
 				327823662820F3C200A19F6D /* SignUpViewController */,
-				32268F08281BA56B0096628A /* HomeViewController */,
+				32268F08281BA56B0096628A /* LoginViewController */,
 				327823722821414800A19F6D /* SocialLogin */,
 				32D47B91281FE3F5008A63A6 /* Language */,
 				328A73DB281C05B6007E83FC /* ListData */,
@@ -153,19 +191,20 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
-		32268F08281BA56B0096628A /* HomeViewController */ = {
+		32268F08281BA56B0096628A /* LoginViewController */ = {
 			isa = PBXGroup;
 			children = (
 				328A73CE281BC4FD007E83FC /* LoginModel.swift */,
 				328A73CC281BC4EA007E83FC /* LoginViewModel.swift */,
 				32268EF4281BA48A0096628A /* ViewController.swift */,
 			);
-			path = HomeViewController;
+			path = LoginViewController;
 			sourceTree = "<group>";
 		};
 		32268F09281BB0520096628A /* CommonFile */ = {
 			isa = PBXGroup;
 			children = (
+				322A25B22822AFEA00D3260A /* RevealViewController */,
 				3278236D282104D600A19F6D /* TableViewCell */,
 				3278235F2820EBB000A19F6D /* PickerController */,
 				3278235E2820EA5600A19F6D /* CommonStructFile */,
@@ -184,6 +223,16 @@
 				32268F0B281BB0740096628A /* Extension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		322A25B22822AFEA00D3260A /* RevealViewController */ = {
+			isa = PBXGroup;
+			children = (
+				322A25B32822B02400D3260A /* ProjectSetUp-Bridging-Header.h */,
+				322A25B42822B02500D3260A /* SWRevealViewController.h */,
+				322A25B52822B02500D3260A /* SWRevealViewController.m */,
+			);
+			path = RevealViewController;
 			sourceTree = "<group>";
 		};
 		327823592820E24B00A19F6D /* Loader */ = {
@@ -341,6 +390,7 @@
 				TargetAttributes = {
 					32268EEC281BA48A0096628A = {
 						CreatedOnToolsVersion = 13.3;
+						LastSwiftMigration = 1330;
 					};
 				};
 			};
@@ -397,26 +447,33 @@
 				3278236F2821050E00A19F6D /* TextFieldTableViewCell.swift in Sources */,
 				32268F0C281BB0740096628A /* Extension.swift in Sources */,
 				327823632820EC2E00A19F6D /* SBPickerSwiftSelector.swift in Sources */,
+				3210E9FB282262A000690C14 /* SideMenuViewController.swift in Sources */,
 				32268EF5281BA48A0096628A /* ViewController.swift in Sources */,
 				327823652820ED2E00A19F6D /* PickerController.swift in Sources */,
 				328A73DF281C0AFF007E83FC /* ListViewModel.swift in Sources */,
 				32268EF1281BA48A0096628A /* AppDelegate.swift in Sources */,
 				32268F0E281BB0B60096628A /* CommanFile.swift in Sources */,
+				3210E9F82822542C00690C14 /* HomeModel.swift in Sources */,
 				32D47B78281F9F5D008A63A6 /* CustomTableView.swift in Sources */,
+				322A25B62822B02500D3260A /* SWRevealViewController.m in Sources */,
 				327823762821418B00A19F6D /* SocialLoginViewModel.swift in Sources */,
 				32268EF3281BA48A0096628A /* SceneDelegate.swift in Sources */,
 				328A73CF281BC4FD007E83FC /* LoginModel.swift in Sources */,
 				32268F06281BA5450096628A /* Constant.swift in Sources */,
 				328A73DD281C05DE007E83FC /* ListUserViewController.swift in Sources */,
 				32D47B8D281FD8D9008A63A6 /* LangaugePreferencesViewModel.swift in Sources */,
+				3210E9F62822541A00690C14 /* HomeViewModel.swift in Sources */,
 				327823712821055400A19F6D /* LabelTableViewCell.swift in Sources */,
 				327823742821416400A19F6D /* SocialViewController.swift in Sources */,
 				3278236A2820FF8600A19F6D /* SignUpViewModel.swift in Sources */,
 				328A73DA281C0308007E83FC /* MBProgressHub.swift in Sources */,
+				3210E9F4282253D000690C14 /* HomeViewController.swift in Sources */,
 				327823682820FF2F00A19F6D /* SignUpViewController.swift in Sources */,
+				322A25AF2822A02900D3260A /* SideMenuViewModel.swift in Sources */,
 				32782378282141A200A19F6D /* SocialLoginModel.swift in Sources */,
 				328A73D5281BE045007E83FC /* APIRequest.swift in Sources */,
 				3278235C2820E28400A19F6D /* ImagePickerController.swift in Sources */,
+				322A25B12822A03C00D3260A /* SideMenuModel.swift in Sources */,
 				328A73E1281C0CD3007E83FC /* ListTableViewCell.swift in Sources */,
 				3278236C2820FFAA00A19F6D /* SignUpModel.swift in Sources */,
 				328A73CD281BC4EA007E83FC /* LoginViewModel.swift in Sources */,
@@ -577,6 +634,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 83D7RPYBY6;
@@ -601,6 +659,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = PrakashInfo.ProjectSetUp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ProjectSetUp/CommonFile/RevealViewController/ProjectSetUp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -611,6 +671,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 83D7RPYBY6;
@@ -635,6 +696,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = PrakashInfo.ProjectSetUp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ProjectSetUp/CommonFile/RevealViewController/ProjectSetUp-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
