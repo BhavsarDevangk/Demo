@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  ProjectSetUp
+
+  Created by PSSPL on 02/05/22.
+  
+*/
+"Login" = "પ્રવેશ કરો";
+"Email" = "ઈમેલ";
+"Password" = "પાસવર્ડ";
+"Submit" = "સબમિટ કરો";
+"Prefer Langauge" = "ભાષા પસંદ કરો";

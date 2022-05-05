@@ -9,18 +9,23 @@ import Foundation
 import UIKit
 let screenWidth = UIScreen.main.bounds.width
 let screenHeight = UIScreen.main.bounds.height
-
 let MainStoryoard = "Main"
-
-
 let kProjectName = "Project Name"
-
-
 let APIURl = "https://retoolapi.dev"
 let getAllUser = "/1lMpyy/data"
+let kLCLCurrentLanguageKey  = "LCLCurrentLanguageKey"
+let kLCLLanguageChangeNotification = "LCLLanguageChangeNotification"
+let kLeftClicked = "LeftClicked"
+let kRightClicked = "RightClicked"
+let kisLogin = "login"
 
+// Set up Typealise for closure
+typealias buttonClickedEvent = (String) -> Void
+typealias selectedImage = (UIImage) -> Void
+typealias selectedDate = (Date) -> Void
+typealias selectedValue = (String,Int) -> Void
+typealias selectedEvent = (Bool,Int) -> Void
 struct Alert {
-    
     func setUpCustomAlertWithActionButton(message:String,isCancel:Bool,cancel cancelAction: @escaping((Bool) -> Void), ok okAction: @escaping((Bool) -> Void),viewController:UIViewController) {
         
         let alert = UIAlertController(title: kProjectName, message: message, preferredStyle: .alert)

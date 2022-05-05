@@ -8,22 +8,28 @@
 import UIKit
 
 class LoginViewModel: NSObject {
-    
+   
     var viewController:UIViewController?
     var strEmailId:String = ""
     var strPassword:String = ""
     var allData = [LoginUserList]()
     
+    static func instantiateViewController(_ bundle: Bundle?) -> ViewController {
+        let vc = ViewController()
+        return vc
+    }
     
     func fetchAlluserData() {
         guard let selfViewController = viewController else {
             return
         }
+        MBProgressHubDisplay.objShared.setupProgressHUB(view: selfViewController.view)
         DispatchQueue.global(qos: .userInitiated).async {
             APIRequestCall().getRequest(strEndPoint: getAllUser) { (lu:[LoginUserList]) in
                 self.allData = lu
-                print("All Data = \(self.allData[0].emailId ?? "")")
+                MBProgressHubDisplay.objShared.dismissProgressHUB(view: selfViewController.view)
             } error: { message in
+                MBProgressHubDisplay.objShared.dismissProgressHUB(view: selfViewController.view)
                 Alert().setUpCustomAlertWithActionButton(message: message, isCancel: false, cancel: { isFailed in
                 }, ok: { isSuccess in
                 }, viewController: selfViewController)
@@ -31,8 +37,14 @@ class LoginViewModel: NSObject {
         }
     }
     
+    func selectionLaguage() {
+        let objData:ListUserViewController = UIStoryboard(name: MainStoryoard, bundle: nil).instantiateViewController(withIdentifier: "ListUserViewController") as! ListUserViewController
+        objData.modalPresentationStyle = .overFullScreen
+        objData.isFromLanguageSelection = true
+        viewController!.present(objData, animated: true, completion: nil)
+    }
+    
     func setUpValidation() -> Bool {
-        
         guard let selfViewController = viewController else {
             return false
         }

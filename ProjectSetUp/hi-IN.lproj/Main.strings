@@ -1,0 +1,21 @@
+
+/* Class = "UILabel"; text = "title"; ObjectID = "FvM-HC-snU"; */
+"FvM-HC-snU.text" = "title";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "GOW-no-MYa"; */
+"GOW-no-MYa.placeholder" = "Password";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "WWY-cl-YiN"; */
+"WWY-cl-YiN.placeholder" = "Email";
+
+/* Class = "UINavigationItem"; title = "Login"; ObjectID = "aWU-gU-ssF"; */
+"aWU-gU-ssF.title" = "Login";
+
+/* Class = "UIViewController"; title = "ListUserViewController"; ObjectID = "f5p-7l-nhi"; */
+"f5p-7l-nhi.title" = "ListUserViewController";
+
+/* Class = "UIButton"; configuration.title = "Submit"; ObjectID = "nfL-kd-eN3"; */
+"nfL-kd-eN3.configuration.title" = "Submit";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "nfL-kd-eN3"; */
+"nfL-kd-eN3.normalTitle" = "Button";
