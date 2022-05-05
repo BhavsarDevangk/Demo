@@ -17,6 +17,7 @@ let kLCLCurrentLanguageKey  = "LCLCurrentLanguageKey"
 let kLCLLanguageChangeNotification = "LCLLanguageChangeNotification"
 let kLeftClicked = "LeftClicked"
 let kRightClicked = "RightClicked"
+let kisLogin = "login"
 
 // Set up Typealise for closure
 typealias buttonClickedEvent = (String) -> Void

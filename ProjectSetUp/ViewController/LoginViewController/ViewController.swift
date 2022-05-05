@@ -40,8 +40,10 @@ class ViewController: UIViewController {
         objLoginViewModel.selectionLaguage()
     }
     @IBAction func btnSubmitClicked(_ sender: Any) {
+        let objSideMenu:SWRevealViewController = UIStoryboard(name: MainStoryoard, bundle: nil).instantiateViewController(withIdentifier: "SWRevealViewController") as! SWRevealViewController
+        self.view.window?.rootViewController = objSideMenu
+        self.view.window?.makeKeyAndVisible()
         // Define the menu
-        let objHomeViewController:HomeViewController = UIStoryboard(name: MainStoryoard, bundle: nil).instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
 //        if let email = txtEmailId.text {
 //            objLoginViewModel.strEmailId = email
 //        }

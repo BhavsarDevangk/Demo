@@ -15,10 +15,11 @@ class HomeViewModel: NSObject {
                 self?.setUpSideMenuClicked()
             }
         }
+        viewHeader.btnleft.addTarget(SWRevealViewController(), action: #selector(SWRevealViewController.revealToggle(_:)), for: .touchUpInside)
         viewHeader.isRightAvailable = false
-        viewHeader.lblTitle.text = "Sign Up"
+        viewHeader.lblTitle.text = "Home"
     }
     func setUpSideMenuClicked() {
-        
+        print("button Clicked")
     }
 }
