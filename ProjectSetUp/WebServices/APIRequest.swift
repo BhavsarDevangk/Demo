@@ -16,6 +16,39 @@ class APIRequestCall: NSObject {
     }
     
     
+    func ProfilegetRequest<T:Decodable>(strEndPoint:String,success successData: @escaping((T) -> Void),error errorData : @escaping((String) -> Void))
+    {
+        let apiURl = APIURl + strEndPoint
+        if !checkInterNetConnection()
+        {
+            errorData(AlertMessage.checkInterNetConnection.alertMessage())
+        }
+        
+        Alamofire.request(apiURl, method: .get).responseJSON {response in
+            
+            switch response.result
+            {
+            case.success(_):
+                do
+                {
+                    let jsonData = try JSONDecoder().decode(T.self, from: response.data!)
+                    successData(jsonData)
+                }
+                catch
+                {
+                    errorData(AlertMessage.jsonIssue.alertMessage())
+                }
+                break
+            case .failure(let error):
+                errorData(error.localizedDescription)
+                break
+            }
+            
+        }
+    }
+    
+    
+    
     func getRequest<T:Decodable>(strEndPoint:String,success successData: @escaping ((T) -> Void),error errorData : @escaping ((String) -> Void)) {
         let apiURl = APIURl + strEndPoint
         if !checkInterNetConnection() {
@@ -83,7 +116,8 @@ class APIRequestCall: NSObject {
 //                }
             }
             
-            for i in 0...arrImage.count - 1 {
+            for i in 0...arrImage.count - 1
+            {
                 let img = arrImage[i]
                 let nameOfImage = arrImageName[i]
                 guard let imgData = img.jpegData(compressionQuality: 1) else { return }
